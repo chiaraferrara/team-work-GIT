@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel🚞Train</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <!-- Logo -->
+        <img style="width: 200px" src="img/logo.png" />
+
+        <!-- navbar -->
+        <nav>
+            <ul>
+                <li class="navblock">
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li class="navblock">
+                    <div class="dropdown-block">
+                        <a id="destination" href="#destination">Destinazioni</a>
+                        <!-- dropdown Destinazioni -->
+                        <div class="dropdown-block">
+                            <ul class="dropdown-content">
+                                <li><a href="aragona.html">Aragona</a></li>
+                                <li><a href="campobello.html">Campobello</a></li>
+                                <li><a href="sciacca.html">Sciacca</a></li>
+                            </ul>
+                            <!-- BUG OR FEATURE ? -->
+                            <!-- <div class="dropdown-content"></div> -->
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                </li>
+
+                <li class="navblock">
+                    <div class="dropdown-block">
+                        <a id="locomotives" href="#locomotives">Locomotive</a>
+                        <!-- dropdown locomotive-->
+                        <ul class="dropdown-content">
+                            <li><a href="vapore.html">Vapore</a></li>
+                            <li><a href="diesel.html">Diesel</a></li>
+                            <li><a href="elettrico.html">Elettiche</a></li>
+                        </ul>
+                        <!-- BUG OR FEATURE ? -->
+                        <!-- <div class="dropdown-content"> -->
+                        <!-- </div> -->
+                    </div>
+                </li>
+
+                <li class="navblock"><a href="contatti.html">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="travel">
+        <h2>Trenitalia e frecciarossa</h2>
+        <h4>per un viaggio meraviglioso</h4>
+    </div>
+
+    <main>
+        <div class="contactus" >
+            <h2>Contattaci</h2>
+
+            <form id="moduloContatto" name="moduloContatto" action="mailto:tuaemail@example.com" method="post"
+                enctype="text/plain">
+                <fieldset class="contact-fs">
+                    <legend>Dati Personali</legend>
+                    <label for="nome">Nome:</label>
+                    <input id="nome" name="nome" autofocus required pattern="[^0-9]+" type="text"
+                        placeholder="Nome" /><br />
+
+                    <label for="cognome">Cognome:</label>
+                    <input id="cognome" name="cognome" required pattern="[^0-9]+" type="text"
+                        placeholder="Cognome" /><br />
+
+                    <label for="dataDiNascita">Data di Nascita:</label>
+                    <input id="dataDiNascita" name="dataDiNascita" required type="date" /><br />
+                </fieldset>
+                <br>
+                <fieldset class="contact-fs">
+                    <legend>Indirizzo</legend>
+                    <label for="numeroCivico">Numero Civico:</label>
+                    <input id="numeroCivico" name="numeroCivico" min="1" type="number"
+                        placeholder="Numero Civico" /><br />
+
+                    <label for="via">Via:</label>
+                    <input id="via" name="via" required type="text" placeholder="Via" /><br />
+
+                    <label for="indirizzoExtra">Indirizzo Extra (se necessario):</label>
+                    <input id="indirizzoExtra" name="indirizzoExtra" type="text" placeholder="Indirizzo" /><br />
+
+                    <label for="citta">Città:</label>
+                    <input id="citta" name="citta" required pattern="[^0-9]+" type="text" placeholder="Città" /><br />
+
+                    <label for="provincia">Provincia:</label>
+                    <select id="provincia" name="provincia" required>
+                        <option value="">Seleziona una provincia..</option>
+                        <option value="Agrigento">Agrigento</option>
+                        <option value="Alessandria">Alessandria</option>
+                        <option value="Ancona">Ancona</option>
+                        <option value="Arezzo">Arezzo</option>
+                        <option value="Ascoli Piceno">Ascoli Piceno</option>
+                        <option value="Asti">Asti</option>
+                        <option value="Avellino">Avellino</option>
+                        <option value="Palermo">Palermo</option>
+                    </select><br>
+
+                    <label for="cap">CAP:</label>
+                    <input id="cap" name="cap" title="Inserisci un CAP italiano valido (es. 00100)" pattern="\d{5}"
+                        type="text" placeholder="CAP" /><br>
+                </fieldset>
+                <br>
+                <fieldset class="contact-fs">
+                    <legend>Recapiti</legend>
+                    <label for="cellulare">Cellulare:</label>
+                    <input id="cellulare" name="cellulare" type="tel" pattern="[0-9]{10}"
+                        placeholder="Numero di Cellulare (es. 1234567890)" /><br />
+
+                    <label for="email">Email:</label>
+                    <input id="email" name="email" required type="email"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Indirizzo Email" /><br />
+                </fieldset>
+                <br>
+                <fieldset class="contact-fs">
+                    <legend>Preferenze di Contatto</legend>
+                    <label for="metodoDiContatto">Metodo di Contatto Preferito:</label><br />
+                    <input id="emailContatto" name="contatto" required type="radio" value="email" />Email <br />
+                    <input id="telefonoContatto" name="contatto" required type="radio" value="telefono" />Telefono
+                    <br />
+                </fieldset>
+                <br>
+                <fieldset class="contact-fs">
+                    <legend>Commenti</legend>
+
+                    <label for="richiestaCopia">Desideri ricevere una copia del modulo via email?</label>
+                    <input id="richiestaCopia" name="richiestaCopia" type="checkbox" /><br><br>
+
+                    <label for="commenti">Altri Commenti o Domande?<br></label>
+                    <textarea id="commenti" name="commenti" cols="100" rows="10" maxlength="750"
+                        placeholder="Lascia un commento. Massimo 750 caratteri."></textarea><br>
+                </fieldset>
+                <br>
+                <fieldset class="contact-fs" id="invio">
+                    <div>
+                        <input id="btn" type="submit" value="Invia Modulo" />
+                        <input id="btn" type="reset" value="Resetta Modulo" />
+                    </div>
+                </fieldset>
+                <br>
+            </form>
+        </div>
+
+</body>
+<footer class="footer-distributed">
+    <div class="footer-left">
+        <img style="width: 300px" src="img/logo-bianco.png" />
+
+    <p class="footer-links">
+      <a href="index.html" class="link-1">Home</a>
+
+      <a href="contatti.html">Contatti</a>
+    </p>
+       <p class="footer-company-name">Train Travel © 2024 - Tutti i diritti riservati</p>
+  </div>
+
+  <div class="footer-center">
+
+    <div>
+      <a href="https://stevejobs.academy/" target="_blank"><img style="width: 200px" src="img/logo-sja.png"></a><br>
+      <a href="https://www.topnetwork.it/" target="_blank"><img style="width: 200px" src="img/logo-top-bianco.png"></a>
+
+    </div>
+
+  </div>
+
+  <div class="footer-right">
+
+    <p class="footer-company-about">
+      <span>Progeto Fila 1</span>
+      Questo progetto è stato realizzato dal gruppo di fila 1.
+    </p>
+
+    <div class="footer-icons">
+
+      <a href="https://www.linkedin.com/in/alberto-cangialosi-150833265/"><img style="width: 35px" src="img/foto_fila/alberto.jpg"></a>
+      <a href="https://www.linkedin.com/in/chiara-ferrara-41273a265/"><img style="width: 35px" src="img/foto_fila/chiara.jpg"></a>
+      <a href="https://www.linkedin.com/in/fatima-cangialosi-645901207/"><img style="width: 35px" src="img/foto_fila/fatima.png"></a>
+      <a href="https://github.com/Rizaaal"><img style="width: 35px" src="img/foto_fila/gabriele.jpg"></a>
+      <a href="https://www.linkedin.com/in/gianmarco-cul%C3%B2-139331253/"><img style="width: 35px" src="img/foto_fila/gianmarco.jpg"></a>
+      <a href="https://www.linkedin.com/in/massimiliano-corsini/"><img style="width: 35px" src="img/foto_fila/massimiliano.jpg"></a>
+      <a href="https://www.linkedin.com/in/stefano-cammarata-b4a147218/"><img style="width: 35px" src="img/foto_fila/stefano.jpg"></a>
+
+
+    </div>
+
+  </div>
+                  <div class="flex-parent jc-center">
+                    <a class="btn_primary" href='#top'>Sali sù</a>
+                    </div>
+
+</footer>
+</html>
