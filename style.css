@@ -51,7 +51,7 @@ nav > ul > li:hover {
 }
 
 nav > ul > li {
-	position: relative; /* Add this line */
+	position: relative; 
 	padding: 20px 30px;
   }
   
