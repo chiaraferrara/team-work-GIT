@@ -170,10 +170,10 @@ h4 {
   
   margin: auto;
   font-family: "Almarai", sans-serif;
-  font-size: 28px;
+  font-size: 38px;
   text-align: center;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 .back-to-top {
   margin: auto;
@@ -220,7 +220,7 @@ section {
 }
 
 .footer-distributed{
-  background: #6d6565;
+  background: #252a2a;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
@@ -393,18 +393,17 @@ section {
 .btn_primary {
     border: none;
     outline: none;
-    background: linear-gradient(90deg, #233565, #233565);
+    background-color: #ffffff;
     padding: 1.5rem 2rem;
     border-radius: 10px;
     color: white;
     font-size: 1rem;
-    box-shadow: 1px 10px 2rem rgb(35, 53, 101);
     transition: all 0.2s ease-in;
     text-decoration: none;
     place-items: center;
 }
 .btn_primary:visited{
-	color: #ffffff;
+	color: #000000;
 }
 
 
