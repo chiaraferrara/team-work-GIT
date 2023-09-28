@@ -34,9 +34,6 @@ nav > ul {
 	margin-bottom: 0px;
 }
 
-nav > ul > li {
-	padding: 20px 30px;
-}
 
 nav ul > li {
 	list-style: none;
@@ -53,20 +50,27 @@ nav > ul > li:hover {
 	background-color: #65759e;
 }
 
-.dropdown-content {
+nav > ul > li {
+	position: relative; /* Add this line */
+	padding: 20px 30px;
+  }
+  
+  .dropdown-content {
 	display: none;
 	position: absolute;
 	z-index: 5;
-
+	top: 100%; /* below the parent li */
+	left: 0; /* Aligns with the left edge of the parent li */
 	background-color: #f9f9f9;
 	min-width: 160px;
 	padding: 12px;
-}
+  }
 
-.navblock:hover,
-.dropdown-block:hover .dropdown-content {
+  .navblock:hover .dropdown-content,
+  .dropdown-block:hover .dropdown-content {
 	display: block;
-}
+  }
+  
 
 .travel {
 	background-image: url("img/banner.jpg");
